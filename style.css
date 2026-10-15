@@ -490,3 +490,176 @@ body {
   }
 
 }
+
+
+/* SECTION */
+#hera {
+    background: #100e13;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* SECTION TITLE */
+#hera .section-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* TWO CARDS IN A ROW */
+#hera .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+#hera .course-card {
+    display: flex;
+    width: 550px;
+    height: 270px;
+    background: #8ce9aa;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+/* IMAGE SIDE */
+#hera .course-image {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+#hera .course-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* CREATOR INFO ON IMAGE */
+#hera .creator {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    color: white;
+    text-shadow: 0 1px 4px black;
+}
+
+#hera .creator h3 {
+    font-size: 12px;
+    margin: 0 0 6px;
+}
+
+#hera .creator p {
+    font-size: 10px;
+    margin: 0;
+}
+
+
+#hera .course-info {
+    width: 55%;
+    padding: 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+#hera .course-info h4 {
+    font-size: 8px;
+    font-weight: normal;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+}
+
+#hera .course-info h2 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 0 0 12px;
+}
+
+#hera .course-info p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* SIGNUP LINK */
+#hera .signup {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#hera .signup span {
+    font-size: 25px;
+    line-height: 1;
+}
+
+/* SMALL SCREENS */
+@media (max-width: 600px) {
+    #hera {
+        padding: 12px;
+    }
+
+    #hera .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #hera .course-card {
+        width: 100%;
+        max-width: 550px;
+        height: 250px;
+        flex-shrink: 1;
+    }
+
+    #hera .course-info {
+        padding: 12px;
+    }
+
+    #hera .course-info h2 {
+        font-size: 16px;
+    }
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  
+  a{
+    margin-top: 20px;
+    color: white;
+  }
+  p{
+    color: white;
+  }
+
+  .nad{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .logo{
+    gap: 20px;
+  }
+}
